@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation - Ultimate Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="rawrlogo.jpg" alt="Logo" class="logo">
+        <h1>DOM Manipulation Ultimate Pro</h1>
+    </header>
+
+    <main class="container">
+
+        <!-- 1. Dynamic List -->
+        <section class="card">
+            <h2>Daftar Dinamis</h2>
+            <div class="input-group">
+                <input type="text" id="itemInput" placeholder="Masukkan item" class="form-control">
+                <button id="addItemBtn" class="btn btn-gradient">Tambah Item</button>
+            </div>
+            <ul id="itemList" class="list-group"></ul>
+        </section>
+
+        <!-- 2. Ubah Warna Background -->
+        <section class="card">
+            <h2>Ubah Warna Background</h2>
+            <div class="color-buttons">
+                <button class="btn colorBtn" data-color="#ff6b6b">Merah</button>
+                <button class="btn colorBtn" data-color="#51cf66">Hijau</button>
+                <button class="btn colorBtn" data-color="#339af0">Biru</button>
+            </div>
+        </section>
+
+        <!-- 3. Counter -->
+        <section class="card">
+            <h2>Counter</h2>
+            <div class="counter-container">
+                <button id="decreaseBtn" class="btn btn-gradient">-</button>
+                <span id="counter" class="counter-badge">0</span>
+                <button id="increaseBtn" class="btn btn-gradient">+</button>
+                <button id="resetBtn" class="btn btn-gradient">Reset</button>
+            </div>
+        </section>
+
+        <!-- 4. Toggle Show/Hide -->
+        <section class="card">
+            <h2>Toggle Show/Hide</h2>
+            <button id="toggleBtn" class="btn btn-gradient">Tampilkan / Sembunyikan</button>
+
+            <div class="input-group" style="margin-top:10px;">
+                <input type="text" id="paragraphInput" class="form-control" placeholder="Tulis teks paragraf baru">
+                <button id="updateParagraphBtn" class="btn btn-gradient">Update Paragraf</button>
+            </div>
+
+            <p id="toggleParagraph" class="toggle-paragraph">Ini adalah paragraf default.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Web Ultimate Pro - Alfiansyah</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -78,3 +78,33 @@ export async function serviceDestroy(params: string, id: string) {
     token: true,
   });
 }
+
+export async function serviceLogin(data: any) {
+  const url = `${ROOT_API}/${API_VERSION}/login`;
+
+  return callAPI({
+    url,
+    method: 'POST',
+    data,
+  });
+}
+
+export async function serviceRegister(data: any) {
+  const url = `${ROOT_API}/${API_VERSION}/register`;
+
+  return callAPI({
+    url,
+    method: 'POST',
+    data,
+  });
+}
+
+export async function serviceLogout() {
+  const url = `${ROOT_API}/${API_VERSION}/logout`;
+
+  return callAPI({
+    url,
+    method: 'POST',
+    token: true,
+  });
+}
